@@ -1,4 +1,85 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Pixgen
+
+Pixgen is a modern Next.js application for generating and exploring images with a clean, intuitive interface.
+
+## Features
+
+- Fast, responsive Next.js application
+- Simple image-generation workflow
+- Modern UI optimized for desktop and mobile
+- Automatic font optimization with `next/font`
+
+## Tech Stack
+
+- [Next.js](https://nextjs.org)
+- [React](https://react.dev)
+- JavaScript
+- CSS
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js 18.18 or later
+- npm, yarn, pnpm, or Bun
+
+### Installation
+
+Clone the repository, install dependencies, and start the development server:
+
+```bash
+git clone <repository-url>
+cd pixgen
+npm install
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+### Available Scripts
+
+```bash
+npm run dev      # Start the development server
+npm run build    # Create a production build
+npm run start    # Start the production server
+npm run lint     # Run the linter
+```
+
+## Project Structure
+
+```text
+app/             Application routes and UI
+public/           Static assets
+```
+
+Start customizing the application in `app/page.js`.
+
+## Environment Variables
+
+If the application requires external services, create a `.env.local` file in the project root and add the required variables:
+
+```env
+# Example
+NEXT_PUBLIC_API_URL=your-api-url
+```
+
+Do not commit secrets or private credentials to version control.
+
+## Deployment
+
+The recommended deployment platform is [Vercel](https://vercel.com/new). Connect the repository, configure any required environment variables, and deploy.
+
+For other deployment options, see the [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying).
+
+## Learn More
+
+- [Next.js Documentation](https://nextjs.org/docs)
+- [Next.js Learn](https://nextjs.org/learn)
+- [Vercel Documentation](https://vercel.com/docs)
+
+## License
+
+This project is for personal and educational use unless otherwise specified.
 
 ## Getting Started
 

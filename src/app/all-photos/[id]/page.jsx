@@ -7,7 +7,6 @@ const DetailsPage = async ({ params }) => {
   const photos = await res.json();
   const { id } = await params;
   const detailApps = photos.find((photo) => photo.id === Number(id));
-  console.log(detailApps);
   return (
     <div className="container mx-auto my-5">
       <Card className="w-full items-stretch md:flex-row">
