@@ -8,7 +8,6 @@ const AllPhotos = async ({searchParams}) => {
   const photos = await res.json();
 
   const filteredPhotos = catagory ? photos.filter((photo)=>(photo.category.toLowerCase() === catagory.toLowerCase())) : photos;
-  console.log(filteredPhotos);
   return (
     <div className="container mx-auto py-5">
       <h2 className="text-xl font-semibold">All Photos</h2>
