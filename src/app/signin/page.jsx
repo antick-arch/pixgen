@@ -11,6 +11,7 @@ import {
   Label,
   TextField,
 } from "@heroui/react";
+import { BsGoogle } from "react-icons/bs";
 
 export default function SignInPage() {
   const onSubmit = async (e) => {
@@ -26,6 +27,12 @@ export default function SignInPage() {
     });
     console.log({ data, error });
   };
+
+  const handleGoogle = async() =>{
+    const data = await authClient.signIn.social({
+    provider: "google",
+  });
+  }
 
   return (
     <Card className="border mx-auto w-125 py-10 mt-5">
@@ -86,6 +93,8 @@ export default function SignInPage() {
           </Button>
         </div>
       </Form>
+      <p className="text-center">OR</p>
+      <Button onClick={handleGoogle} type="button" variant="outline" className="w-full flex justify-center items-center gap-3"><BsGoogle />Sign in with Google</Button>
     </Card>
   );
 }
